@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reverse Geolocation</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+  </head>
+  <body>
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+    <script defer src="src/source.js"></script>
+
+    <div class="info-bar border">
+      <h1>REVERSE GEOLOCATION</h1>
+      <br />
+      <h2>Your Location Info</h2>
+      <div class="error-area border">
+        <h1 id="error"></h1>
+      </div>
+      <div class="country-render-area border">
+        <img id="flag" alt="flag" />
+        <h1>Country: <span class="info" id="country"></span></h1>
+        <h1>Population: <span class="info" id="population"></span></h1>
+        <h1>Language: <span class="info" id="language"></span></h1>
+        <h1>Currency: <span class="info" id="currency"></span></h1>
+        <h1>Capital: <span class="info" id="capital"></span></h1>
+        <h1>Your City: <span class="info" id="city"></span></h1>
+      </div>
+      <div class="info-table"></div>
+    </div>
+    <div class="border" id="map"></div>
+  </body>
+</html>
