@@ -9,3 +9,4 @@
 The content of the series;
 
 1 - [Reverse-Geolocation](1-Reverse-Geolocation/README.md) <br>
+2 - [Forkify](2-Forkify/README.md) <br>
