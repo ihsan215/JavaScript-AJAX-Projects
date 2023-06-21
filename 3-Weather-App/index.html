@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <!-- My Css File -->
+    <link rel="stylesheet" href="src/style/style.css" />
+    <script type="module" defer src="src/js/controller.js"></script>
+
+    <title>Weather App</title>
+  </head>
+  <body>
+    <section class="vh-100">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-md-8 col-lg-6 col-xl-4">
+            <h3 class="mb-4 pb-2 fw-normal">Check the weather forecast</h3>
+            <div class="mb-4 pb-2">
+            <div class="card shadow-0 border">
+              <div class="card-body p-4">
+                <h4 class="mb-1 sfw-normal"><span id = "city"></span></h4>
+                <p class="mb-2">Current temperature: <strong><span id = "temperature">5.42</span>°C</strong></p>
+                <p>Weather : <strong><span id = "WWCode">5.42</span></strong></p>
+                <p>Wind : <strong><span id = "Wind">5.42</span></strong></p>
+                <p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap bundle js -->
+    <script
+      src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
