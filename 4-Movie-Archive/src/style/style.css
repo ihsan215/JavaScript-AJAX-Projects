@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: fantasy;
+  background-color: #e2e0d4;
+  background-image: url("../img/img-1.jpg");
+  background-repeat: repeat;
+}
+
+.title {
+  color: #e2e0d4;
+  font-size: 600;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.main-area {
+  margin: auto;
+  width: 75%;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 12.5%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.815);
+}
+
+#movieName {
+  color: rgb(23, 23, 23);
+  margin-top: 1rem;
+  margin-left: 5%;
+  width: 75%;
+  height: 5rem;
+  font-size: 2.6rem;
+}
+.submitBtn {
+  width: 18%;
+  font-size: 2.6rem;
+  height: 5rem;
+  margin-bottom: 1.4rem;
+}
+
+.anime-info {
+  color: #c2aa10;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.movie-area {
+  margin: auto;
+  width: 80%;
+  height: 45%;
+  position: absolute;
+  top: 55%;
+  left: 10%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  overflow-y: scroll;
+}
+
+.movie-area::-webkit-scrollbar {
+  width: 1em;
+}
+
+.movie-area::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.movie-area::-webkit-scrollbar-thumb {
+  background-color: #6abade89;
+  border-radius: 15px;
+  outline: 1px solid rgb(75, 99, 123);
+}
+
+.movie-list {
+  font-size: 2.6rem;
+  height: 5rem;
+  margin-bottom: 1.4rem;
+}
+
+.movie-item {
+  background-color: #091d2689;
+  color: #e2e0d4;
+}
+
+.moive-item:hover {
+  background-color: #1ea5e389;
+  color: #e2e0d4;
+}
+
+/* Modal Settings */
+/* Overlay Settings */
+
+.modal-window {
+  z-index: 10;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 70%;
+
+  background-color: #e0ecd9;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  z-index: 5;
+}
+
+/* Hiiden Settings */
+.hidden {
+  display: none;
+}
+
+.font-set {
+  font-size: 2rem;
+}
+
+.font-set-2 {
+  font-size: 1.5rem;
+}
+
+.font-set-3 {
+  font-size: 1.2rem;
+}
+
+.trailer {
+  font-size: 2rem;
+}

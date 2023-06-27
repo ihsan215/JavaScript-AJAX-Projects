@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style/style.css" />
+    <script type="module" defer src="src/js/controller.js"></script>
+    <title>Movie Archive</title>
+  </head>
+  <body>
+    <div class="card mb-3 modal-window hidden" style="max-width: 540px"></div>
+    <div class="main-area">
+      <h1 class="title">Movie</h1>
+      <form id="MovieForm">
+        <input
+          type="text"
+          id="movieName"
+          name="movieName"
+          placeholder="movie name"
+        />
+        <input
+          class="btn btn-outline-light submitBtn"
+          type="submit"
+          value="Get  Info"
+        />
+      </form>
+      <div class="movie-area">
+        <ul class="movie-area-ui list-group list-group-light movie-list"></ul>
+      </div>
+    </div>
+
+    <div class="overlay hidden"></div>
+
+    <!-- Bootstrap bundle js -->
+    <script
+      src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
